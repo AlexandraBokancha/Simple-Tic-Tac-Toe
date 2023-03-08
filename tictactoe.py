@@ -5,7 +5,7 @@ possible_moves = [['1', '1'], ['1', '2'], ['1', '3'],
 possible_values = [1, 2, 3]
 players = ''
 turn = 1
-game_round = 0
+round = 0
 
 print('---------')
 print('|' + ' ' + grid[0] + ' ' + grid[1] + ' ' + grid[2] + ' ' + '|')
@@ -100,7 +100,7 @@ while True:
     elif win_o():
         print('O wins')
         break
-    elif game_round == 9 and win_x() is None and win_o() is None:
+    elif round == 9 and win_x() is None and win_o() is None:
         print('Draw')
         break
 
